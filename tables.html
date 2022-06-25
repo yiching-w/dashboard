@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>新竹就業中心績效管理系統</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="images/logo-icon.png" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="lds-ripple">
+      <div class="lds-pos"></div>
+      <div class="lds-pos"></div>
+    </div>
+  </div>
+  <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+    data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+    <header class="topbar" data-navbarbg="skin5">
+      <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+        <div class="navbar-header" data-logobg="skin5">
+          <a class="navbar-brand" href="#">
+            <b class="logo-icon ps-1">
+              <img src="images/logo-icon.png" alt="homepage" class="light-logo" width="40" />
+            </b>
+            <span class="logo-text ms-1">
+              <img src="images/logo-text.png" alt="homepage" class="light-logo" width="150" />
+            </span>
+          </a>
+          <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)">
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
+          <ul class="navbar-nav float-start me-auto">
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)"
+                data-sidebartype="mini-sidebar"><i class="fas fa-bars text-dark"></i></a>
+            </li>
+          </ul>
+          <div class="text-dark">
+            <div class="d-flex align-items-center">
+              <span>使用者：</span>
+              <span>管理者</span>
+              <div class="ms-auto"><button class="btn btn-danger btn-sm ms-1">登出系統</button></div>
+            </div>
+            <div>
+              <span>登入系統時間：</span>
+              <span>2022/06/25 15:54:59</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <aside class="left-sidebar" data-sidebarbg="skin5">
+      <div class="scroll-sidebar">
+        <nav class="sidebar-nav">
+          <ul id="sidebarnav" class="pt-4">
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)">
+                <i class="fas fa-user-clock"></i>
+                <span class="hide-menu">計畫執行人員</span>
+              </a>
+              <ul class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="javascript:void(0)" class="sidebar-link">
+                    <i class="fas fa-spinner"></i>
+                    <span class="hide-menu">計畫進度回報平台</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="javascript:void(0)" class="sidebar-link">
+                    <i class="fas fa-broadcast-tower"></i>
+                    <span class="hide-menu">知識交流平台</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)">
+                <i class="fas fa-user-check"></i>
+                <span class="hide-menu">計畫複核人員</span>
+              </a>
+              <ul class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="javascript:void(0)" class="sidebar-link">
+                    <i class="fas fa-spinner"></i>
+                    <span class="hide-menu">計畫進度覆核平台</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="javascript:void(0)" class="sidebar-link">
+                    <i class="fas fa-broadcast-tower"></i>
+                    <span class="hide-menu">知識交流覆核平台</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)">
+                <i class="fas fa-user-shield"></i>
+                <span class="hide-menu">後台管控人員</span>
+              </a>
+              <ul class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="javascript:void(0)" class="sidebar-link">
+                    <i class="fab fa-kickstarter-k"></i>
+                    <span class="hide-menu">KPI目標資料管理</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="javascript:void(0)" class="sidebar-link">
+                    <i class="fas fa-user-cog"></i>
+                    <span class="hide-menu">人員基本資料管理</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="javascript:void(0)" class="sidebar-link">
+                    <i class="fas fa-comment"></i>
+                    <span class="hide-menu">訊息通知資料管理</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="javascript:void(0)" class="sidebar-link">
+                    <i class="fas fa-chalkboard"></i>
+                    <span class="hide-menu">知識交流管理平台</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="javascript:void(0)" class="sidebar-link">
+                    <i class="fas fa-th-list"></i>
+                    <span class="hide-menu">報表管理作業</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)">
+                <i class="fas fa-cog"></i>
+                <span class="hide-menu">功能管理</span>
+              </a>
+              <ul class="collapse first-level">
+                <li class="sidebar-item">
+                  <a href="javascript:void(0)" class="sidebar-link">
+                    <i class="fas fa-user-cog"></i>
+                    <span class="hide-menu">使用者管理</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="javascript:void(0)" class="sidebar-link">
+                    <i class="fas fa-users-cog"></i>
+                    <span class="hide-menu">群組權限設定管理</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="javascript:void(0)" class="sidebar-link">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span class="hide-menu">登入記錄查看</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <div class="page-wrapper">
+      <div class="container-fluid">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h4 class="card-title">KPI目標資料管理</h4>
+            <div class="form-group row mb-0 mb-sm-3">
+              <label for="account" class="col-sm-3 text-sm-end control-label col-form-label">帳號名稱</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="account" />
+              </div>
+            </div>
+            <div class="form-group row mb-0 mb-sm-3">
+              <label for="name" class="col-sm-3 text-sm-end control-label col-form-label">姓名</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="name" />
+              </div>
+            </div>
+            <div class="form-group row mb-0 mb-sm-3">
+              <label class="col-sm-3 text-sm-end control-label col-form-label">群組權限名稱</label>
+              <div class="col-sm-6">
+                <select class="select2 form-select shadow-none" style="width: 100%; height: 36px">
+                  <option>全部資料</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+            </div>
+            <div class="border-top">
+              <div class="card-body text-center pb-0">
+                <button type="button" class="btn btn-warning">資料查詢</button>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                  data-bs-target="#update">資料新增</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">查詢結果</h5>
+                <div class="table-responsive">
+                  <table id="" class="table table-striped responsive">
+                    <thead>
+                      <tr>
+                        <th>帳號名稱</th>
+                        <th>群組權限名稱</th>
+                        <th>單位</th>
+                        <th>姓名</th>
+                        <th>連絡電話</th>
+                        <th>E-MAIL</th>
+                        <th>使用狀態</th>
+                        <th>修改</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-title="帳號名稱">管理者</td>
+                        <td data-title="群組權限名稱">1 .</td>
+                        <td data-title="單位"></td>
+                        <td data-title="姓名">管理者</td>
+                        <td data-title="連絡電話">0912345678</td>
+                        <td data-title="E-MAIL">abc123@gmail.com</td>
+                        <td data-title="使用狀態">啟用</td>
+                        <td data-title="修改">
+                          <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                            data-bs-target="#update">修改</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td data-title="帳號名稱">管理者</td>
+                        <td data-title="群組權限名稱">1 .</td>
+                        <td data-title="單位"></td>
+                        <td data-title="姓名">管理者</td>
+                        <td data-title="連絡電話">0912345678</td>
+                        <td data-title="E-MAIL">abc123@gmail.com</td>
+                        <td data-title="使用狀態">啟用</td>
+                        <td data-title="修改">
+                          <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                            data-bs-target="#update">修改</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td data-title="帳號名稱">管理者</td>
+                        <td data-title="群組權限名稱">1 .</td>
+                        <td data-title="單位"></td>
+                        <td data-title="姓名">管理者</td>
+                        <td data-title="連絡電話">0912345678</td>
+                        <td data-title="E-MAIL">abc123@gmail.com</td>
+                        <td data-title="使用狀態">啟用</td>
+                        <td data-title="修改">
+                          <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                            data-bs-target="#update">修改</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#">
+                          <i class="fas fa-chevron-left"></i>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">
+                          <i class="fas fa-chevron-right"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="update">
+        <div class="modal-dialog modal-dialog-centered">
+          <form class="g-3 needs-validation" novalidate>
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">KPI目標資料管理</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                <div class="col-sm-6">
+                  <label for="project" class="form-label">計畫名稱</label>
+                  <input type="text" class="form-control" id="project" value="" required>
+                  <div class="invalid-feedback">請輸入計畫名稱</div>
+                </div>
+                <div class="col-12 mt-3">
+                  <div class="row">
+                    <div class="col-sm-6 pe-sm-0">
+                      <label for="goal" class="form-label">目標數</label>
+                      <input type="text" class="form-control" id="goal" value="" required>
+                      <div class="invalid-feedback">請輸入目標數</div>
+                    </div>
+                    <div class="col-sm-6 pe-sm-0">
+                      <label for="dep" class="form-label">單位</label>
+                      <input type="text" class="form-control" id="dep" value="" required>
+                      <div class="invalid-feedback">請輸入單位</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 mt-4">
+                  <div class="form-group row">
+                    <label for="title" class="col-sm-2">計畫執行人員</label>
+                    <div class="col-sm-10">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="checkbox1" value="option1">
+                        <label class="form-check-label" for="checkbox1">陳組長</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="checkbox2" value="option1">
+                        <label class="form-check-label" for="checkbox2">丁學員</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="checkbox3" value="option1">
+                        <label class="form-check-label" for="checkbox3">王學員</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="checkbox4" value="option1">
+                        <label class="form-check-label" for="checkbox4">吳學員</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="checkbox5" value="option1">
+                        <label class="form-check-label" for="checkbox5">張學員</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 mt-0">
+                  <div class="form-group row">
+                    <label for="title" class="col-sm-2">計畫複核人員</label>
+                    <div class="col-sm-10">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="checkbox6" value="option1">
+                        <label class="form-check-label" for="checkbox6">陳組長</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="checkbox7" value="option1">
+                        <label class="form-check-label" for="checkbox7">丁學員</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="checkbox8" value="option1">
+                        <label class="form-check-label" for="checkbox8">王學員</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="checkbox9" value="option1">
+                        <label class="form-check-label" for="checkbox9">吳學員</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="checkbox10" value="option1">
+                        <label class="form-check-label" for="checkbox10">張學員</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-row row">
+                    <div class="col-4 col-md-2 mb-3"><label for="validationCustom01">1月</label><input type="text"
+                        class="form-control" id="validationCustom01" placeholder="" value="" required="">
+                      <div class="invalid-feedback">請輸入數字</div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-3"><label for="validationCustom01">2月</label><input type="text"
+                        class="form-control" id="validationCustom01" placeholder="" value="" required="">
+                      <div class="invalid-feedback">請輸入數字</div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-3"><label for="validationCustom01">3月</label><input type="text"
+                        class="form-control" id="validationCustom01" placeholder="" value="" required="">
+                      <div class="invalid-feedback">請輸入數字</div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-3"><label for="validationCustom01">4月</label><input type="text"
+                        class="form-control" id="validationCustom01" placeholder="" value="" required="">
+                      <div class="invalid-feedback">請輸入數字</div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-3"><label for="validationCustom01">5月</label><input type="text"
+                        class="form-control" id="validationCustom01" placeholder="" value="" required="">
+                      <div class="invalid-feedback">請輸入數字</div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-3"><label for="validationCustom01">6月</label><input type="text"
+                        class="form-control" id="validationCustom01" placeholder="" value="" required="">
+                      <div class="invalid-feedback">請輸入數字</div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-3"><label for="validationCustom01">7月</label><input type="text"
+                        class="form-control" id="validationCustom01" placeholder="" value="" required="">
+                      <div class="invalid-feedback">請輸入數字</div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-3"><label for="validationCustom01">8月</label><input type="text"
+                        class="form-control" id="validationCustom01" placeholder="" value="" required="">
+                      <div class="invalid-feedback">請輸入數字</div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-3"><label for="validationCustom01">9月</label><input type="text"
+                        class="form-control" id="validationCustom01" placeholder="" value="" required="">
+                      <div class="invalid-feedback">請輸入數字</div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-3"><label for="validationCustom01">10月</label><input type="text"
+                        class="form-control" id="validationCustom01" placeholder="" value="" required="">
+                      <div class="invalid-feedback">請輸入數字</div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-3"><label for="validationCustom01">11月</label><input type="text"
+                        class="form-control" id="validationCustom01" placeholder="" value="" required="">
+                      <div class="invalid-feedback">請輸入數字</div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-3"><label for="validationCustom01">12月</label><input type="text"
+                        class="form-control" id="validationCustom01" placeholder="" value="" required="">
+                      <div class="invalid-feedback">請輸入數字</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                <button class="btn btn-info" type="submit">資料新增</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="libs/jquery.min.js"></script>
+  <script src="libs/bootstrap.bundle.min.js"></script>
+  <script src="libs/perfect-scrollbar.jquery.min.js"></script>
+  <script src="js/waves.js"></script>
+  <script src="js/sidebarmenu.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
