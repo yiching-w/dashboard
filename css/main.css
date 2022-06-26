@@ -9,9 +9,14 @@ body {
     background: #ffb848;
 }
 
+.table td, .table th {
+    padding: .4rem;
+}
+
 table td {
     text-align: center; 
     vertical-align: middle;
+    color: #000;
 }
 
 table th {
@@ -20,11 +25,8 @@ table th {
     vertical-align: middle;
 }
 
-@media (min-width: 576px) {
-    .modal-dialog {
-        max-width: 700px;
-        margin: 1.75rem auto;
-    }
+thead {
+    background-color: #d6e2e9;
 }
 
 label {
@@ -67,8 +69,8 @@ label {
 }
 
 .page-item.active .page-link {
-    background-color: #99c1de;
-    border-color: #99c1de;
+    background-color: #2255a4;
+    border-color: #2255a4;
 }
 
 .page-link,
@@ -76,9 +78,20 @@ label {
     color: #343a40;
 }
 
+.modal-header {
+    background-color: #d6e2e9;
+}
+
 .modal-body {
     max-height: 65vh;
     overflow-y: scroll;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 700px;
+        margin: 1.75rem auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -110,5 +123,49 @@ label {
     }
     table.responsive td:before {
         content: attr(data-title);
+    }
+}
+
+.form-select,
+.form-control {
+    color: #000;
+    transition: 0.2s linear;
+}
+
+.form-control:focus,
+.form-select:focus {
+    color: #000;
+    background-color: #d6e2e9;
+}
+
+.form-check-input:checked {
+    background-color: #2255a4;
+    border-color: #2255a4;
+}
+
+.page-link:focus {
+    color: #343a40;
+}
+
+.topbar .top-navbar .navbar-header,
+.navbar-brand {
+    line-height: normal;
+    height: 64px;
+}
+
+.topbar .nav-toggler, 
+.topbar .topbartoggler {
+    line-height: 64px;
+}
+
+@media (max-width: 568px) {
+    .topbar .top-navbar .navbar-header .navbar-brand {
+        width: auto;
+    }
+    .logo-icon img {
+        width: 30px;
+    }
+    .logo-text img {
+        width: 95px;
     }
 }
