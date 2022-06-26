@@ -125,4 +125,10 @@ $(function () {
   $(document).on('click', '.backdrop', function() {
       $('#main-wrapper').removeClass('show-sidebar');
   });
+
+  $('body').on('hidden.bs.modal', '.modal', function() {
+    $('button').focus(function() {
+      this.blur();
+    });
+  });
 });

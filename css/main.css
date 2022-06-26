@@ -4,6 +4,7 @@ body {
     font-family: 'Noto Sans TC', sans-serif !important;
     font-weight: 400;
     color: #000;
+    font-size: 1rem;
 }
 
 #main-wrapper .topbar .top-navbar .navbar-header[data-logobg=skin5] {
@@ -53,16 +54,16 @@ label {
 }
 
 .sidebar-nav ul .sidebar-item .sidebar-link {
-    color: #343a40;
+    color: #000;
     opacity: 0.8;
 }
 
 .sidebar-nav ul .sidebar-item .sidebar-link i {
-    color: #343a40;
+    color: #000;
 }
 
 .sidebar-nav .has-arrow:after {
-    border-color: #343a40;
+    border-color: #000;
 }
 
 .pagination {
@@ -86,6 +87,13 @@ label {
 .modal-body {
     max-height: 65vh;
     overflow-y: scroll;
+}
+
+.modal .title {
+    background-color: rgba(2,78,172,.12);
+    color: #024eac;
+    padding: 0 5px;
+    border-radius: 5px;
 }
 
 @media (min-width: 576px) {
@@ -136,7 +144,7 @@ label {
 .form-control:focus,
 .form-select:focus {
     color: #000;
-    background-color: #d6e2e9;
+    background-color: #f3fbff;
 }
 
 .form-check-input:checked {
