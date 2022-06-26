@@ -121,4 +121,8 @@ $(function () {
         form.classList.add('was-validated')
       }, false)
     })
+
+  $(document).on('click', '.backdrop', function() {
+      $('#main-wrapper').removeClass('show-sidebar');
+  });
 });
