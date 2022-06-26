@@ -81,19 +81,12 @@ label {
 }
 
 .modal-header {
-    background-color: #d6e2e9;
+    background-color: #99c1de;
 }
 
 .modal-body {
     max-height: 65vh;
     overflow-y: scroll;
-}
-
-.modal .title {
-    background-color: rgba(2,78,172,.12);
-    color: #024eac;
-    padding: 0 5px;
-    border-radius: 5px;
 }
 
 @media (min-width: 576px) {
@@ -117,7 +110,6 @@ label {
         height: auto;
         line-height: 30px;
         position: relative;
-        padding: 10px;
     }
     table.responsive td {
         width: 100%;
